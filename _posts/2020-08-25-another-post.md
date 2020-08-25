@@ -2,7 +2,11 @@
 layout: post
 title:  "Another Post"
 date:   2020-08-23 20:28:36 +0000
+featured-image: assets/images/vintage-robot-with-lots-of-black-negative-space.jpg
+featured-alt-txt: "robot"
 categories: jekyll update
+photo-credit: "Santa Claus"
+photo-credit-link: "https://www.santaclaus.com"
 ---
 This is one for the record books folks! The newest acer computer is running 
 ruby and is serving this jekyll site! I had to transplant the hard drive from my old mac straight into this old thing. Surprisinly, it's handing the task _exceedingly_ well! Needless to say, I'm VERY impressed...
