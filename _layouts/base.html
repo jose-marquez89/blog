@@ -1,19 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{{ page.title }}</title>
+		{% capture title %}
+		  {%- if page.title -%}
+			  {{ page.title }}
+			{%- else -%}
+			  {{ site.title }}
+			{%- endif -%}
+		{% endcapture %}
+			
+		<title>{{ title }}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Main CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-		<link rel="shortcut icon" href="assets/images/favicon.png">
+		<link rel="stylesheet" type="text/css" href={{ "assets/css/bootstrap.min.css" | relative_url }}>
+		<link rel="stylesheet" type="text/css" href={{ "assets/css/codestyle.css" | relative_url }}>
+		<link rel="shortcut icon" href={{ "assets/images/favicon.png" | relative_url }}>
 
 	</head>
 
   <body>
     {% include nav.html %}
     <div class="container">
+			<div class="row">
+				<p></p>
+				<br>
+			</div>
 
       {{ content }}
 
@@ -23,9 +35,9 @@
 
 
 		<!-- Javascript -->
-    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src={{ "assets/js/jquery-3.4.1.min.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "assets/js/popper.min.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "assets/js/bootstrap.min.js" | relative_url }}></script>
 
   </body>
 
