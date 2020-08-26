@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Jose Marquez is a Data Scientist, Analyst and Engineer from San Antonio, TX.
   Formerly a musician, he's transitioned into the world of Data and Computer Science.
   This is his personal and professional blog.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: /blog # the subpath of your site, e.g. /blog
 url: "https://josemarquez.tech" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
