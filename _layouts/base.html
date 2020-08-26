@@ -21,8 +21,8 @@
 		  <!-- FB OG tags -->
 		  <meta property="og:title" content="{{ page.title }}" />
 		  <meta property="og:type" content="website" />
-		  <meta property="og:url" content="{{ page.url }}" />
-		  <link rel="canonical" href={{ page.url }} />
+		  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+		  <link rel="canonical" href={{ page.url | absolute_url }} />
 
 			<!-- Twitter summary cards -->
 			<meta name="twitter:card" content="summary_large_image">
