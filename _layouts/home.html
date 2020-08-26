@@ -17,7 +17,7 @@ layout: base
 			<div class="blog-post"><!-- Multinomial NB -->
 				<h2 class="blog-post-title">{{ post.title }}</h2>
 				<p class="text-muted">Posted on {{ post.date | date_to_string: "ordinal", "US" }}</p>
-				<img style="height: 100%; width: 100%; display: block;" src={{ post.featured-image | absolute_url }}>
+				<img class="rounded" style="height: 100%; width: 100%; display: block;" src={{ post.featured-image | absolute_url }}>
 				<br>
 				{{ post.excerpt }}
 				<a class="btn btn-outline-primary" href={{ post.url | absolute_url }}>Continue Reading</a>
