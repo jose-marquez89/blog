@@ -1,7 +1,6 @@
 ---
 layout: base
 ---
-
 	<div class="page-header">
 		<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
       <div class="col-md-6 px-0">
@@ -12,20 +11,28 @@ layout: base
   </div>
 
 	<div class="row">
-    <!-- Insert templating here for multiple blog posts -->
 		<div class="col-md-8 blog-main">
 			<h3 class="pb-3 mb-4 font-italic border-bottom">Newest Posts</h3>
-		  {% for post in site.posts %}
+		  {% for post in paginator.posts %}
 			<div class="blog-post"><!-- Multinomial NB -->
 				<h2 class="blog-post-title">{{ post.title }}</h2>
 				<p class="text-muted">Posted on {{ post.date | date_to_string: "ordinal", "US" }}</p>
 				<img style="height: 100%; width: 100%; display: block;" src={{ post.featured-image | absolute_url }}>
 				<br>
 				{{ post.excerpt }}
-				<a class="btn btn-primary" href={{ post.url | absolute_url }}>Continue Reading</a>
+				<a class="btn btn-outline-primary" href={{ post.url | absolute_url }}>Continue Reading</a>
 				<hr>
       </div><!-- blog post -->
 			{% endfor %}
+			<nav class="blog-pagination">
+				<div class="d-flex justify-content-center">
+					<div class="btn-group" role="group">
+	  				<a type="button" class="btn btn-secondary" href={{ paginator.next_page_path }}><- Older</a>
+	  				<a type="button" class="btn btn-secondary" href={{ paginator.previous_page_path }}>Newer -></a>
+					</div>
+				</div>
+			</nav>
+			<hr>
 
     </div>
     {% include about_elsewhere.html %}
