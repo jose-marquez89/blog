@@ -86,9 +86,136 @@ by.</p>
 </figure>
 
 <h4>Top Companies</h4>
-<p>Content</p>
+<p>Out of all the job postings in the data collected from Indeed, Amazon had
+	 the most frequent posts. The large number of postings by Amazon could be
+	 due to the company's size and scope, but the frequency may also be explained
+	 by jobs with technical sounding names and descriptions that aren't "tech" jobs
+	 in the traditional sense. I plan to investigate this in an upcoming post. For
+	 the time being, the following table shows the top 20 most frequent job posters
+	 on Indeed.
+</p>
+<table class="table table-hover"><!-- Table Start -->
+  <thead>
+  	<tr>
+			<td></td>
+  		<th scope="col">Company</th>
+  		<th scope="col">Jobs Posted</th>
+  	</tr>
+  </thead>
+	<tbody>
+		<tr>
+			<th scope="col">1</th>
+			<td>Amazon</td>
+			<td>1527</td>
+		</tr>
+		<tr>
+			<th scope="col">2</th>
+			<td>Northrop Grumman</td>
+			<td>387</td>
+		</tr>
+		<tr>
+			<th scope="col">3</th>
+			<td>Deloitte</td>
+			<td>387</td>
+		</tr>
+		<tr>
+			<th scope="col">4</th>
+			<td>General Dynamics Information Technology</td>
+			<td>313</td>
+		</tr>
+		<tr>
+			<th scope="col">5</th>
+			<td>Booz Allen Hamilton</td>
+			<td>312</td>
+		</tr>
+		<tr>
+			<th scope="col">6</th>
+			<td>Lockheed Martin Corporation</td>
+			<td>283</td>
+		</tr>
+		<tr>
+			<th scope="col">7</th>
+			<td>CACI</td>
+			<td>279</td>
+		</tr>
+		<tr>
+			<th scope="col">8</th>
+			<td>Leidos</td>
+			<td>274</td>
+		</tr>
+		<tr>
+			<th scope="col">9</th>
+			<td>SAIC</td>
+			<td>232</td>
+		</tr>
+		<tr>
+			<th scope="col">10</th>
+			<td>JPMorgan Chase Bank, N.A.</td>
+			<td>229</td>
+		</tr>
+		<tr>
+			<th scope="col">11</th>
+			<td>Apple</td>
+			<td>213</td>
+		</tr>
+		<tr>
+			<th scope="col">12</th>
+			<td>iknowvate</td>
+			<td>187</td>
+		</tr>
+		<tr>
+			<th scope="col">13</th>
+			<td>Pearson</td>
+			<td>183</td>
+		</tr>
+		<tr>
+			<th scope="col">14</th>
+			<td>Perspecta</td>
+			<td>177</td>
+		</tr>
+		<tr>
+			<th scope="col">15</th>
+			<td>ManTech International Corporation</td>
+			<td>176</td>
+		</tr>
+		<tr>
+			<th scope="col">16</th>
+			<td>Facebook</td>
+			<td>174</td>
+		</tr>
+		<tr>
+			<th scope="col">17</th>
+			<td>Microsoft</td>
+			<td>150</td>
+		</tr>
+		<tr>
+			<th scope="col">18</th>
+			<td>PayPal</td>
+			<td>147</td>
+		</tr>
+		<tr>
+			<th scope="col">19</th>
+			<td>BAE Systems</td>
+			<td>140</td>
+		</tr>
+		<tr>
+			<th scope="col">20</th>
+			<td>Raytheon Intelligence & Space</td>
+			<td>136</td>
+		</tr>
+	</tbody>
+</table><!-- Table End -->
+
 <h4>Location is Everything?</h4>
-<p>Content</p>
+
+<p>It's difficult to guage the impact an applicant's location has on their chances
+   of actually landing a job. If we're observing a fleeting shift to remote work, aspiring
+   candidates may still need to look outside of their geographic circle. I collected
+   the locations of all the pertinent job postings onto the following figure, which
+   can be interacted with using the controls in the upper right hand corner. The
+   circles denoting job concentration can be toggled by clicking them on the legend.
+   You can also mouse over the circles on the map to get more information about
+	 jobs counts in that city.</p>
 
 <figure class="text-center"><!-- map visualization -->
 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
@@ -96,3 +223,28 @@ by.</p>
 <div id="05d0dfb9-dc8a-4444-919f-fb0b3837cd63" class="plotly-graph-div" style="height:100%; width:100%;"></div>
 <script type="text/javascript" src={{ "assets/js/plotly/tj_map2.js" | relative_url }}></script>
 </figure>
+
+<p>The numbers above tell a story of job availability, despite the country's economy
+   and people experiencing challenging times. Thousands of jobs are still awaiting
+	 applications from skilled tech workers, even in locations far from major cities.
+	 I encourage those seeking employment in the tech sector during this difficult
+	 period to keep looking and learning; although hiring may have slowed,
+	 opportunities still exist for driven individuals to enter the industry.</p>
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+
+	var disqus_config = function () {
+	this.page.url = "{{ "the-tech-job-hiring-landscape.html" | absolute_url}}";  // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = "{{ page.title }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://josemarquez.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
