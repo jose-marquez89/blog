@@ -17,6 +17,38 @@
 		<link rel="stylesheet" type="text/css" href={{ "assets/css/codestyle.css" | absolute_url }}>
 		<link rel="shortcut icon" href={{ "assets/images/favicon.png" | absolute_url }}>
 
+		{% if page.layout == "post" %}
+		  <!-- FB OG tags -->
+		  <meta property="og:title" content={{ page.title }} />
+		  <meta property="og:type" content="Blog Post" />
+		  <meta property="og:url" content={{ page.url }} />
+		  <link rel="canonical" href={{ page.url }} />
+
+			<!-- Twitter summary cards -->
+			<meta name="twitter:card" content="summary_large_image">
+		  <meta name="twitter:site" content="@jlm89" />
+		  <meta name="twitter:creator" content="@jlm89" />
+		  <meta name="twitter:title" content={{ page.title }} />
+		  <meta name="twitter:description" content={{ page.excerpt }} />
+		  <meta name="twitter:image" content={{ page.featured-image }}>
+		  <meta name="theme-color" content="#0085A1">
+		{% else %}
+		  <!-- FB OG tags -->
+		  <meta property="og:title" content="Jose Marquez - Data Scientist" />
+		  <meta property="og:type" content="website" />
+		  <meta property="og:url" content="https://josemarquez.tech/" />
+		  <link rel="canonical" href="https://josemarquez.tech/" />
+
+			<!-- Twitter summary cards -->
+			<meta name="twitter:card" content="summary_large_image">
+		  <meta name="twitter:site" content="@jlm89" />
+		  <meta name="twitter:creator" content="@jlm89" />
+		  <meta name="twitter:title" content="Jose Marquez" />
+		  <meta name="twitter:description" content="DS Blog of Jose Marquez" />
+		  <meta name="twitter:image" content={{ "assets/images/big_bend.jpg" | absolute_url }}>
+		  <meta name="theme-color" content="#0085A1">
+		{% endif %}
+
 	</head>
 
   <body>
