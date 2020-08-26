@@ -38,7 +38,10 @@
 	<script type="text/javascript" src={{ "assets/js/jquery-3.4.1.min.js" | absolute_url }}></script>
 	<script type="text/javascript" src={{ "assets/js/popper.min.js" | absolute_url }}></script>
 	<script type="text/javascript" src={{ "assets/js/bootstrap.min.js" | absolute_url }}></script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	{% if page.layout == "post" %}
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	{% endif %}
   </body>
 
 </html>
