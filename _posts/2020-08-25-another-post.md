@@ -8,9 +8,15 @@ categories: jekyll update
 photo-credit: "Santa Claus"
 photo-credit-link: "https://www.santaclaus.com"
 ---
-This is one for the record books folks! The newest acer computer is running 
-ruby and is serving this jekyll site! I had to transplant the hard drive from my old mac straight into this old thing. Surprisinly, it's handing the task _exceedingly_ well! Needless to say, I'm VERY impressed...
+This is one for the record books folks! The newest acer computer is running
+ruby and is serving this jekyll site! I had to transplant the hard drive from my
+old mac straight into this old thing. Surprisingly, it's handing the task 
+_exceedingly_ well! Needless to say, I'm VERY impressed...
 
+This is the second part of the paragraph, just wanna see if everything is gonna
+work out. This post will be deleted. I used to work at six flags as a musician,
+it was a BLAST. Those were certainly the good ole' days, but I can feel that
+the best is yet to come, and I didn't even know it.
 Jekyll requires blog post files to be named according to the following format:
 
 `YEAR-MONTH-DAY-title.MARKUP`
