@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<div class="row">
+	<div class="col-md-8 blog-main">
+		<div class="blog-post"><!-- Blog Post  -->
+			<h2 class="blog-post-title">{{ page.title }}</h2>
+			<p class="text-muted">Posted on {{ page.date | date_to_string: "ordinal", "US" }}</p>
+			<figure class="figure">
+				<img class="figure-img img-fluid rounded" alt={{ page.featured-alt-txt }} src={{ page.featured-image | relative_url }}>
+					{% if page.photo-credit %}
+					<figcaption class="figure-caption">Photo by <a href={{ page.photo-credit-link }}>{{ page.photo-credit }}</a></figcaption>
+					{% endif %}
+			</figure>
+						<br>
+					{{ content }}
+
+					{% include disqus_comments.html %}
+		</div>
+	</div>
+
+
+	{% include about_elsewhere.html %}
+</div>

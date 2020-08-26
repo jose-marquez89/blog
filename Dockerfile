@@ -1,15 +1,6 @@
 FROM ruby:2.7
-
-COPY . /app
-
-WORKDIR /app
-
 RUN gem install jekyll bundler
-
-RUN jekyll new blog
-
-WORKDIR ./blog
-
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
-
-EXPOSE 4000 
+RUN mkdir blog
+WORKDIR /blog
+ENTRYPOINT bundle update && bundle exec jekyll serve \
+  --host 0.0.0.0 --config _config.yml
