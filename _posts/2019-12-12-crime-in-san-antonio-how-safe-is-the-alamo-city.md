@@ -16,21 +16,21 @@ Home of rich traditions, an enviable hospitality economy and an impressive infra
 in America. The city now numbers nearly [1.5 million](https://www.census.gov/quickfacts/sanantoniocitytexas), and with a bigger population comes bigger crime. Still, as a former resident of SA, I recall the city feeling quite safe. According to the numbers, San Antonio crime poses minimal threat to its residents, at least when it comes to violent crime. Every year, the city’s police department publishes its [Uniform Crime Report data](https://www.sanantonio.gov/SAPD/Uniform-Crime-Reports), compiled by the FBI, using data collected by individual law enforcement agencies. The data reveals that in general, despite increases in some areas of violent crime, San Antonians face considerably lower odds of being affected by violent crime, when compared to crimes involving personal property.
 
 <div class="text-center">
-  <img src="assets/images/crime-in-sa/atglance.png" class="img-fluid" alt="Crime in San Antonio at a glance">
+  <img src="/blog/assets/images/crime-in-sa/atglance.png" class="img-fluid" alt="Crime in San Antonio at a glance">
 </div>
 <br>
 
 Despite San Antonio’s relative safety, the Uniform Crime Report shows an increase in a couple of violent offenses, namely aggravated assault and rape. Aggravated assault currently holds the position of the highest incidence violent offense in the Alamo City. As for offenses related to sexual assault, the data appears to be making a clear statement, but these numbers could be produced by numerous factors, including a recent change in the [FBI’s definition](https://www.nbcboston.com/news/national-international/fbi-report-shows-almost-20-percent-increase-in-rape-reports/1949679/) of rape. The change creates an unsatisfactory analysis; has the issue gotten worse, or has reporting gotten better? For the moment, some analysts are choosing to exclude the issue, but ultimately, turning a blind eye to a vexing statistic could delay necessary investigation.
 
 <div class="text-center">
-  <img src="assets/images/crime-in-sa/csfixed.png" class="img-fluid" alt="Scatter plot displaying trends in aggravated assault and rape">
+  <img src="/blog/assets/images/crime-in-sa/csfixed.png" class="img-fluid" alt="Scatter plot displaying trends in aggravated assault and rape">
 </div>
 <br>
 
 The prevalence of reported rape remains an understandably disconcerting statistic for San Antonio. Since the FBI’s redefinition of the crime in 2013, reported incidents have been slowly climbing. This should pose a significant concern; the latest complete data (2018) has become comparable to more densely populated cities like Chicago, New York and Los Angeles. Rates in these large cities, however, still present a lower figure than what’s observed at the National level. As for aggravated assault, the reports surpassed the national level, but were still lower than Houston, measuring at 5 incident reports per 1000 people.
 <div class="d-flex justify-content-center">
-  <img src="assets/images/crime-in-sa/rbc-left.png" class="img-fluid" alt="Bar chart displaying reported rape">
-  <img src="assets/images/crime-in-sa/aabc-right.png" class="img-fluid" alt="Bar chart displaying aggravated assault reports">
+  <img src="/blog/assets/images/crime-in-sa/rbc-left.png" class="img-fluid" alt="Bar chart displaying reported rape">
+  <img src="/blog/assets/images/crime-in-sa/aabc-right.png" class="img-fluid" alt="Bar chart displaying aggravated assault reports">
 </div>
 <br>
 
@@ -38,7 +38,7 @@ The prevalence of reported rape remains an understandably disconcerting statisti
 Despite the admittedly scary upward trend in violent crime statistics, less than 1% of San Antonians were the targets of violent offenders in 2018. The odds may be even lower if you visit San Antonio during February in any given year, and this probability extends to property crime as well. For reasons that remain mostly unexplained, average monthly crime dips down to its lowest point during the second month of the year.
 
 <div class="text-center">
-  <img src="assets/images/crime-in-sa/febdrop.png" class="img-fluid" alt="Plot displaying a yearly recurrence in lower february crime rates">
+  <img src="/blog/assets/images/crime-in-sa/febdrop.png" class="img-fluid" alt="Plot displaying a yearly recurrence in lower february crime rates">
 </div>
 <br>
 
