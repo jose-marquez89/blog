@@ -23,19 +23,27 @@ Since the algorithm in question is so handy for quick and dirty document classif
 
 In order to translate the algorithm to code, it's helpful to understand how the algorithm will do the work. Generally, we use Bayes' Theorem to get probability proportions, which can be thought of as scores:
 
-$$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
+<div class="overflow-auto">
+  $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
+</div>
 
 The above reads, "The probability of A given B is equal to the probability of B given A times the probability of A, divided by the probability of B." Don't let that scare you, when applied to our particular problem, we get the following:
 
-$$ P(Negative|"terrible") = \frac{P("terrible"|Negative) \times P(Negative)}{P("terrible")} $$
+<div class="overflow-auto">
+  $$ P(Negative|"terrible") = \frac{P("terrible"|Negative) \times P(Negative)}{P("terrible")} $$
+</div>
 
 We can discard the denominator and get individual scores for each word in a sentence. Assuming the sentence is "Terrible movie," we can get probability proportions like so:
 
+<div class="overflow-auto">
 $$ P("terrible"|Negative) \times P("film"|Negative) \times P(Negative) $$
+</div>
 
 and
 
+<div class="overflow-auto">
 $$ P("terrible"|Positive) \times P("film"|Positive) \times P(Positive) $$
+</div>
 
 These "scores" can be compared, and the highest score becomes the predicted class of the sentence! That's all the theory I'll be presenting here, as pure statistics are beyond the scope of this post. In the following snippets, we'll see how the algorithm is implemented as part of a python class using only numpy. As a first step, we provide the "alpha" value of 1 by default. We'll need that later on:
 
@@ -139,7 +147,9 @@ self.fitted = True
 
 Although you can set the alpha value for smoothing to 0, it defaults to 1. This alpha value gets added to every word occurrence in the features, and the vocabulary size (the number of unique words in the data, or features for non-text situations) is added to the total word count as a by-product of this step. With that in place we can store the probabilities for each word, for each class, in an array that can be called upon in the "predict" method (Line 7). You may be wondering why there isn't any multiplication or division in the code, given that Bayes' Theorem from earlier necessitated some arithmetic. Not to worry, that math is still there, except that it has been replaced with log arithmetic, in which subtraction provides the result we would normally get from division when doing normal math. This is necessary because of something called [underflow](https://en.wikipedia.org/wiki/Arithmetic_underflow). To get our scores, we'd eventually need to multiply some small numbers by more small numbers, which lead to even smaller numbers!
 
-$$ 0.005 \times 0.005 \times 0.005 = 0.000000125 $$
+<div class="overflow-auto">
+  $$ 0.005 \times 0.005 \times 0.005 = 0.000000125 $$
+</div>
 
 This leads to a situation where the score would be so small, that it would become indistinguishable from zero, at least as far as our computers can represent. The log function takes care of this problem by representing the numbers on a natural logarithmic scale. With this issue out of the way, we can finally create a "predict" method:
 
@@ -164,7 +174,9 @@ def predict(self, X):
 
 With the "fit" method having done most of the heavy lifting, we can once again call on the dot product approach to derive our scores. The transposition of the log probabilities makes it a breeze to "multiply" conditional probabilities of words that are repeated more than once in an observation. For example, if a review stated, "Bad, bad, just plain bad movie!" and we wanted to get the probability proportion of a Negative review, we would need to multiply the conditional probability of "bad" by itself 3 times:
 
-$$ P(Negative|Document) = P("bad"|Negative)^3 \times P("just"|Negative) ... $$
+<div class="overflow-auto">
+  $$ P(Negative|Document) = P("bad"|Negative)^3 \times P("just"|Negative) ... $$
+</div>
 
 After adding the class log prior probabilities to our dot product, we get scores for each class, distributed across an array:
 
