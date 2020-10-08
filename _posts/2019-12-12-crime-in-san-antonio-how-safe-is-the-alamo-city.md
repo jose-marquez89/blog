@@ -29,8 +29,12 @@ Despite San Antonio’s relative safety, the Uniform Crime Report shows an incre
 
 The prevalence of reported rape remains an understandably disconcerting statistic for San Antonio. Since the FBI’s redefinition of the crime in 2013, reported incidents have been slowly climbing. This should pose a significant concern; the latest complete data (2018) has become comparable to more densely populated cities like Chicago, New York and Los Angeles. Rates in these large cities, however, still present a lower figure than what’s observed at the National level. As for aggravated assault, the reports surpassed the national level, but were still lower than Houston, measuring at 5 incident reports per 1000 people.
 <div class="d-flex justify-content-center">
-  <img src="/blog/assets/images/crime-in-sa/rbc-left.png" class="img-fluid" alt="Bar chart displaying reported rape">
-  <img src="/blog/assets/images/crime-in-sa/aabc-right.png" class="img-fluid" alt="Bar chart displaying aggravated assault reports">
+  <figure>
+    <img src="/blog/assets/images/crime-in-sa/rbc-left.png" class="img-fluid" alt="Bar chart displaying reported rape">
+  </figure>
+  <figure>
+    <img src="/blog/assets/images/crime-in-sa/aabc-right.png" class="img-fluid" alt="Bar chart displaying aggravated assault reports">
+  </figure>
 </div>
 <br>
 
