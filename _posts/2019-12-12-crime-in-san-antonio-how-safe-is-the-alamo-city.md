@@ -4,7 +4,7 @@ title: "Crime In San Antonio: How Safe Is The Alamo City?"
 date: 2019-12-12
 featured-image: assets/images/sananto.jpg
 featured-alt-txt: "A night shot of the San Antonio, Texas skyline"
-categories: Data Analysis 
+categories: Data Analysis
 photo-credit: "Jonathan Cutrer"
 photo-credit-link: "https://jcutrer.com/photos"
 comments: true
@@ -46,9 +46,9 @@ Despite the admittedly scary upward trend in violent crime statistics, less than
 </div>
 <br>
 
-What could account for the seasonal drop in overall crime? One suspect is the [winter cold](https://www.nbcnews.com/news/us-news/does-cold-stop-crime-it-seems-so-n309856), which some believe may account for the dip in offenses. People tend to go out less, criminals included. Even in the cold however, crimes in San Antonio seem to be concentrated towards those involving property, especially vehicle theft, some believing this to be due to people leaving their [vehicles running](https://www.nbcnews.com/news/us-news/does-cold-stop-crime-it-seems-so-n309856) to keep the heat on. 
+What could account for the seasonal drop in overall crime? One suspect is the [winter cold](https://www.nbcnews.com/news/us-news/does-cold-stop-crime-it-seems-so-n309856), which some believe may account for the dip in offenses. People tend to go out less, criminals included. Even in the cold however, crimes in San Antonio seem to be concentrated towards those involving property, especially vehicle theft, some believing this to be due to people leaving their [vehicles running](https://www.nbcnews.com/news/us-news/does-cold-stop-crime-it-seems-so-n309856) to keep the heat on.
 
 San Antonio has certainly had its share of change in the past decade, crime being no exception. Despite the changes reported, for a city of over a million people, SA remains a safe place live or visit, with less than 1% of people affected by a violent crime in 2018. Residents faced with property crimes on the other hand measured roughly 40 in 1000 or 4% of the population for that year. I can personally attest to the gravity of property crime in the Alamo City; I’ve had a vehicle broken into twice and one completely stolen during my stay. I cannot say, however, that I have ever experienced violent crime, and perhaps that’s a reflection of what we see in the data: Reside in San Antonio and you may never have a criminal finger laid on you, but you may want to lock your car and take your things with you.
 
-<a href="https://github.com/jose-marquez89/crime-in-sa/blob/master/sa_crime_data_exploration.ipynb" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-secondary">Jupyter NB</a>
-<a href="https://github.com/jose-marquez89/crime-in-sa" target="_blank" rel="noopener noreferrer" type="button" class="btn btn-secondary">GitHub Repo</a>
+<a href="https://github.com/jose-marquez89/crime-in-sa/blob/master/sa_crime_data_exploration.ipynb" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Jupyter NB</a>
+<a href="https://github.com/jose-marquez89/crime-in-sa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repo</a>
