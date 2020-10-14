@@ -67,7 +67,7 @@ Again, the key here is to be primed. The program begins with a pre-course after
 you apply, which provides some practice, but isn't nearly enough to prepare for
 the deluge of material you'll be engulfed in after orientation.
 
-##### 3. The whole entire will take nearly a year
+##### 3. The entire process will take about 9 months to 1 year
 As of October, I will have been job searching for a bit over 2 months. If you're
 starting soon, there's no telling what the job market will look like and what
 company expectations for candidates will be. It's best to prepare for a long haul,
