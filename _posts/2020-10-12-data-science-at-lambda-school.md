@@ -12,7 +12,7 @@ comments: true
 If you've been thinking about joining Lambda School's Data Science program,
 there are more than a few things you should know before you commit your time and
 energy. It took me over 6 months to finish the curriculum, but I wasn't exactly a
-rock start data scientist after completing the program. There are a number of things
+rock star data scientist after completing the program. There are a number of things
 that you'd be wise to prepare for in advance, especially if your background lacks a quantitative component.
 I outline these below, along with a micro analysis of how long it takes to finish up and find work.
 
